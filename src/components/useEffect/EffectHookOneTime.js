@@ -16,6 +16,12 @@ const EffectHookOneTime = () => {
   useEffect(() => {
     console.log('useEffect for mousemove called...');
     window.addEventListener('mousemove', logMousePosition);
+
+    // cleanup code - included in useEffect and returned as a function (example - event handlers, timers, etc.)
+    return () => {
+      console.log('Component un-mounting code');
+      window.removeEventListener('mousemove', logMousePosition);
+    };
   }, []);
 
   return (
