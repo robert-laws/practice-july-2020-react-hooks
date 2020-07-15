@@ -1,7 +1,7 @@
 import React from 'react';
-import StateHook from './components/StateHook';
-
 import './App.scss';
+import StateHook from './components/StateHook';
+import StateHookPrevious from './components/StateHookPrevious';
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
       <h1>App</h1>
       <hr />
       <StateHook />
+      <hr />
+      <StateHookPrevious />
     </div>
   );
 }
