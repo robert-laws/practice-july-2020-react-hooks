@@ -5,6 +5,8 @@ import StateHookPrevious from './components/useState/StateHookPrevious';
 import StateHookObject from './components/useState/StateHookObject';
 import StateHookArray from './components/useState/StateHookArray';
 import EffectHookOnRender from './components/useEffect/EffectHookOnRender';
+import EffectHookConditional from './components/useEffect/EffectHookConditional';
+import EffectHookOneTime from './components/useEffect/EffectHookOneTime';
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
       <hr />
       <h1>useEffect</h1>
       <EffectHookOnRender />
+      <hr />
+      <EffectHookConditional />
+      <hr />
+      <EffectHookOneTime />
     </div>
   );
 }
